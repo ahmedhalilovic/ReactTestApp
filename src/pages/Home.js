@@ -22,6 +22,11 @@ class Home extends React.Component {
         <button onClick={this.handleClick}>
           {this.state.isToggleOn ? 'ON' : 'OFF'}
         </button>
+        <h1>Ahmed</h1>
+        <h1>Ahmed</h1>
+        <h1>Ahmed</h1>
+        <h1>Ahmed</h1>
+        <h1>Ahmed</h1>
       </div>
     );
   }
