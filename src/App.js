@@ -1,22 +1,25 @@
-import React, { Component } from 'react';
-import './style.css';
-import Welcome from '../testing/Box1';
-import DangerButton from '../testing/Button';
-import Toggle from '../testing/Box3';
-import ShowAlert from '../testing/Box4';
-import UsingFetch from '../testing/Box5';
-import PutRequest from '../testing/Box6';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Layout from './pages/Layout';
+import Home from './pages/Home';
+import DataLogs from './pages/DataLogs';
+import Contact from './pages/Contact';
+import NoPage from './pages/NoPage';
 
 export default function App() {
   return (
-    <div>
-      <Welcome name="Ahmed" />
-      <DangerButton />
-      <Toggle />
-      <ShowAlert />
-      <br></br>
-      <UsingFetch />
-      <PutRequest />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="dataLogs" element={<DataLogs />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="*" element={<NoPage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
+
+ReactDOM.render(<App />, document.getElementById('root'));

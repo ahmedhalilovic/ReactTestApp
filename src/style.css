@@ -1,3 +1,15 @@
-h1, p {
+h1,
+p {
   font-family: Lato;
+}
+
+#UlLayout {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#LiLayout {
+  display: inline;
+  padding: 2px;
 }
