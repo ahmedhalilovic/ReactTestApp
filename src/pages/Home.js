@@ -8,7 +8,7 @@ class Home extends React.Component {
         <h1>Home</h1>
         <div>
           <Button name="Relay 1" />
-          <Button name="Relay     2" />
+          <Button name="Relay 2" />
         </div>
       </div>
     );
