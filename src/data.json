@@ -4,3 +4,24 @@
   "title": "ovo je testung neki",
   "body": "a ovo je neki drugi testung"
 }
+
+{
+  "deviceId": 2,
+  "id": 2,
+  "state": "OFF",
+  "body": "a ovo je neki drugi testung"
+}
+
+{
+  "deviceId": 3,
+  "id": 3,
+  "state": "ON",
+  "body": "a ovo je neki drugi testung"
+}
+
+{
+  "deviceId": 4,
+  "id": 4,
+  "state": "SENSE",
+  "body": "a ovo je neki drugi testung"
+}

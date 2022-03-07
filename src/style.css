@@ -3,13 +3,27 @@ p {
   font-family: Lato;
 }
 
-#UlLayout {
+.UlLayout {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-#LiLayout {
+.LiLayout {
   display: inline;
   padding: 2px;
+}
+
+table, td, th {  
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 10px;
 }

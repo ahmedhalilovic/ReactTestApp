@@ -1,32 +1,15 @@
 import React from 'react';
+import Button from '../Button';
 
 class Home extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { isToggleOn: true };
-
-    // This binding is necessary to make `this` work in the callback
-    this.handleClick = this.handleClick.bind(this);
-  }
-
-  handleClick() {
-    this.setState((prevState) => ({
-      isToggleOn: !prevState.isToggleOn,
-    }));
-  }
-
   render() {
     return (
       <div>
         <h1>Home</h1>
-        <button onClick={this.handleClick}>
-          {this.state.isToggleOn ? 'ON' : 'OFF'}
-        </button>
-        <h1>Ahmed</h1>
-        <h1>Ahmed</h1>
-        <h1>Ahmed</h1>
-        <h1>Ahmed</h1>
-        <h1>Ahmed</h1>
+        <div>
+          <Button name="Relay 1" />
+          <Button name="Relay 2" />
+        </div>
       </div>
     );
   }

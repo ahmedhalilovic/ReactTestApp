@@ -6,14 +6,14 @@ const Layout = () => {
   return (
     <>
       <nav>
-        <ul id="UlLayout">
-          <li id="LiLayout">
+        <ul className="UlLayout">
+          <li className="LiLayout">
             <Link to="/">Home</Link>
           </li>
-          <li id="LiLayout">
+          <li className="LiLayout">
             <Link to="/dataLogs">Data Logs</Link>
           </li>
-          <li id="LiLayout">
+          <li className="LiLayout">
             <Link to="/contact">Contact</Link>
           </li>
         </ul>
