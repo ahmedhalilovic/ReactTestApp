@@ -9,6 +9,7 @@ class Home extends React.Component {
         <div>
           <Button name="Relay 1" />
           <Button name="Relay 2" />
+          <Button name="LED lights" />
         </div>
       </div>
     );
